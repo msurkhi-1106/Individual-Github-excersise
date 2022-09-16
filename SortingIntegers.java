@@ -1,7 +1,7 @@
 import java.util.Random;
 public class SortingIntegers {    
     public static void main(String[] args) {        
-        //define original array  
+        //Create random integer Array
         Random rd = new Random();   
         int [] intArray = new int [5] ;     
         int temp = 0;    
@@ -12,7 +12,7 @@ public class SortingIntegers {
            intArray[i] = rd.nextInt();     
            System.out.print(intArray[i] + " ");    
         }    
-        //Sort the array in ascending order using two for loops    
+        //Sort the array   
         for (int i = 0; i <intArray.length; i++) {     
           for (int j = i+1; j <intArray.length; j++) {     
               if(intArray[i] >intArray[j]) {      //swap elements if not in order
